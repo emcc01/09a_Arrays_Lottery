@@ -1,5 +1,5 @@
 /**
- *  Literatur-Beispiel | 6 aus 49
+ *  Literatur-Beispiel | 6 aus 49 wie nutzt man debugger
  * 
  */
 
@@ -19,12 +19,12 @@ public class App {
 		boolean isRepeated;
 				
 		
-		for (int indexDrawn = 0; indexDrawn < slots; indexDrawn++) // 6x
-		{
+		for (int indexDrawn = 0; indexDrawn < slots; indexDrawn++) // 6x   //roten Punkt vor Zeilennr anklicken = Breakpoint setzen, launch und debug dort wird angezeigt welche Variablen bisher, was in array usw, schaltfläche oben erscheint
+		{ // mit oben oder F10 step over, gehen einzelne Schritte weiter
 			do {
 					isRepeated = false;
 					// 1 to 49
-					randomNumber = rand.nextInt((max - min) + 1) + min;
+					randomNumber = rand.nextInt((max - min) + 1) + min;  //mit F11 jeden Schritt einzeln anzeigen lassen wenn gewollt
 					// check for repeated number against
 					// the filled non-zero elements			
 					for (int k = 0; k <= indexDrawn; k++) 
